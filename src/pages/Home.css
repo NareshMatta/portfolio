@@ -1,0 +1,138 @@
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+}
+
+.home-container {
+  text-align: center;
+  max-width: 800px;
+  z-index: 2;
+}
+
+.greeting h1 {
+  font-size: 3.5rem;
+  color: #ccd6f6;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.intro h2 {
+  font-size: 2.5rem;
+  color: #8892b0;
+  margin-bottom: 2rem;
+}
+
+.name {
+  color: #64ffda;
+  font-weight: bold;
+}
+
+.roles {
+  min-height: 80px;
+  margin-bottom: 3rem;
+}
+
+.typewriter-container {
+  font-size: 2rem;
+  color: #64ffda;
+  font-weight: 600;
+  font-family: 'Courier New', monospace;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #64ffda;
+  border: 2px solid #64ffda;
+}
+
+.btn-secondary:hover {
+  background: #64ffda;
+  color: #0a192f;
+  box-shadow: 0 10px 30px rgba(100, 255, 218, 0.4);
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.scroll-arrow {
+  font-size: 2rem;
+  color: #64ffda;
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .greeting h1 {
+    font-size: 2.5rem;
+  }
+
+  .intro h2 {
+    font-size: 1.8rem;
+  }
+
+  .typewriter-container {
+    font-size: 1.5rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .greeting h1 {
+    font-size: 2rem;
+  }
+
+  .intro h2 {
+    font-size: 1.5rem;
+  }
+
+  .typewriter-container {
+    font-size: 1.2rem;
+  }
+}
