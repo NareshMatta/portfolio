@@ -156,7 +156,7 @@ const Projects = () => {
           <h2>Want to see more?</h2>
           <p>Check out my GitHub for more projects and contributions</p>
           <motion.a
-            href="https://github.com/your-username"
+            href="https://github.com/NareshMatta"
             target="_blank"
             rel="noopener noreferrer"
             className="cta-button"
